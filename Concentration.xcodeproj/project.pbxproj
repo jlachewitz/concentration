@@ -27,6 +27,7 @@
 		E4E327B11AE30E71003D9B3E /* CircularTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E327B01AE30E71003D9B3E /* CircularTimer.m */; };
 		E4E327B51AE30EE4003D9B3E /* DTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E327B41AE30EE4003D9B3E /* DTAlertView.m */; };
 		E4E327B81AE30EF7003D9B3E /* DTProgressStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E327B71AE30EF7003D9B3E /* DTProgressStatus.m */; };
+		E4E327BA1AE357A8003D9B3E /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = E4E327B91AE357A8003D9B3E /* play-button.png */; };
 		E4FEEED91AE2B5730077A603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FEEED81AE2B5730077A603 /* main.m */; };
 		E4FEEEDC1AE2B5730077A603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FEEEDB1AE2B5730077A603 /* AppDelegate.m */; };
 		E4FEEEDF1AE2B5730077A603 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FEEEDE1AE2B5730077A603 /* ViewController.m */; };
@@ -63,8 +64,8 @@
 		E4E327861AE2DACF003D9B3E /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
 		E4E327871AE2DACF003D9B3E /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
 		E4E327881AE2DACF003D9B3E /* cardbacksideimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardbacksideimage.png; sourceTree = "<group>"; };
-		E4E327961AE2F14D003D9B3E /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
-		E4E327971AE2F14D003D9B3E /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		E4E327961AE2F14D003D9B3E /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Shuffling.h"; path = "Concentration/NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		E4E327971AE2F14D003D9B3E /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Shuffling.m"; path = "Concentration/NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 		E4E327A21AE30110003D9B3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E4E327AF1AE30E71003D9B3E /* CircularTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircularTimer.h; path = Concentration/CircularTimer/CircularTimer.h; sourceTree = "<group>"; };
 		E4E327B01AE30E71003D9B3E /* CircularTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircularTimer.m; path = Concentration/CircularTimer/CircularTimer.m; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		E4E327B41AE30EE4003D9B3E /* DTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTAlertView.m; path = Concentration/DTAlertView/DTAlertView.m; sourceTree = "<group>"; };
 		E4E327B61AE30EF7003D9B3E /* DTProgressStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTProgressStatus.h; path = Concentration/DTAlertView/DTProgressStatus.h; sourceTree = "<group>"; };
 		E4E327B71AE30EF7003D9B3E /* DTProgressStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTProgressStatus.m; path = Concentration/DTAlertView/DTProgressStatus.m; sourceTree = "<group>"; };
+		E4E327B91AE357A8003D9B3E /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
 		E4FEEED31AE2B5730077A603 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FEEED71AE2B5730077A603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4FEEED81AE2B5730077A603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 			name = CircularTimer;
 			sourceTree = "<group>";
 		};
-		E4E327B21AE30EC2003D9B3E /* AlertView */ = {
+		E4E327B21AE30EC2003D9B3E /* DTAlertView */ = {
 			isa = PBXGroup;
 			children = (
 				E4E327B61AE30EF7003D9B3E /* DTProgressStatus.h */,
@@ -125,14 +127,32 @@
 				E4E327B31AE30EE4003D9B3E /* DTAlertView.h */,
 				E4E327B41AE30EE4003D9B3E /* DTAlertView.m */,
 			);
-			name = AlertView;
+			name = DTAlertView;
+			sourceTree = "<group>";
+		};
+		E4E327BB1AE36DDA003D9B3E /* NSMutableArray+Shuffling */ = {
+			isa = PBXGroup;
+			children = (
+				E4E327961AE2F14D003D9B3E /* NSMutableArray+Shuffling.h */,
+				E4E327971AE2F14D003D9B3E /* NSMutableArray+Shuffling.m */,
+			);
+			name = "NSMutableArray+Shuffling";
+			sourceTree = "<group>";
+		};
+		E4E327BC1AE36DF9003D9B3E /* ThirdPartyLibs */ = {
+			isa = PBXGroup;
+			children = (
+				E4E327AE1AE30E4A003D9B3E /* CircularTimer */,
+				E4E327B21AE30EC2003D9B3E /* DTAlertView */,
+				E4E327BB1AE36DDA003D9B3E /* NSMutableArray+Shuffling */,
+			);
+			name = ThirdPartyLibs;
 			sourceTree = "<group>";
 		};
 		E4FEEECA1AE2B5730077A603 = {
 			isa = PBXGroup;
 			children = (
-				E4E327B21AE30EC2003D9B3E /* AlertView */,
-				E4E327AE1AE30E4A003D9B3E /* CircularTimer */,
+				E4E327BC1AE36DF9003D9B3E /* ThirdPartyLibs */,
 				E4FEEED51AE2B5730077A603 /* Concentration */,
 				E4FEEEEF1AE2B5730077A603 /* ConcentrationTests */,
 				E4FEEED41AE2B5730077A603 /* Products */,
@@ -154,16 +174,14 @@
 			children = (
 				E4FEEEDA1AE2B5730077A603 /* AppDelegate.h */,
 				E4FEEEDB1AE2B5730077A603 /* AppDelegate.m */,
+				E4FEEF011AE2C5420077A603 /* Card.h */,
+				E4FEEF021AE2C5420077A603 /* Card.m */,
+				E4FEEEE51AE2B5730077A603 /* LaunchScreen.xib */,
 				E4FEEEDD1AE2B5730077A603 /* ViewController.h */,
 				E4FEEEDE1AE2B5730077A603 /* ViewController.m */,
 				E4FEEEE01AE2B5730077A603 /* Main.storyboard */,
 				E4FEEEE31AE2B5730077A603 /* Images.xcassets */,
-				E4FEEEE51AE2B5730077A603 /* LaunchScreen.xib */,
 				E4FEEED61AE2B5730077A603 /* Supporting Files */,
-				E4FEEF011AE2C5420077A603 /* Card.h */,
-				E4FEEF021AE2C5420077A603 /* Card.m */,
-				E4E327961AE2F14D003D9B3E /* NSMutableArray+Shuffling.h */,
-				E4E327971AE2F14D003D9B3E /* NSMutableArray+Shuffling.m */,
 			);
 			path = Concentration;
 			sourceTree = "<group>";
@@ -171,6 +189,8 @@
 		E4FEEED61AE2B5730077A603 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4E327761AE2D815003D9B3E /* 1.jpg */,
+				E4E327771AE2D815003D9B3E /* 2.jpg */,
 				E4E3277C1AE2DACF003D9B3E /* 3.jpg */,
 				E4E3277D1AE2DACF003D9B3E /* 4.jpg */,
 				E4E3277E1AE2DACF003D9B3E /* 5.jpg */,
@@ -183,9 +203,8 @@
 				E4E327851AE2DACF003D9B3E /* 12.jpg */,
 				E4E327861AE2DACF003D9B3E /* 13.jpg */,
 				E4E327871AE2DACF003D9B3E /* 14.jpg */,
+				E4E327B91AE357A8003D9B3E /* play-button.png */,
 				E4E327881AE2DACF003D9B3E /* cardbacksideimage.png */,
-				E4E327761AE2D815003D9B3E /* 1.jpg */,
-				E4E327771AE2D815003D9B3E /* 2.jpg */,
 				E4FEEED71AE2B5730077A603 /* Info.plist */,
 				E4FEEED81AE2B5730077A603 /* main.m */,
 			);
@@ -307,6 +326,7 @@
 				E4E3278F1AE2DACF003D9B3E /* 9.jpg in Resources */,
 				E4FEEEE71AE2B5730077A603 /* LaunchScreen.xib in Resources */,
 				E4FEEEE41AE2B5730077A603 /* Images.xcassets in Resources */,
+				E4E327BA1AE357A8003D9B3E /* play-button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

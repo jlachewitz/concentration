@@ -12,14 +12,18 @@
 
 @interface ViewController : UIViewController<CardDelegate>
 
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UILabel *matchesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *guessesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *highScoreLabel;
-@property (strong, nonatomic) IBOutlet UIView *timerContainerView;
+@property (weak, nonatomic) IBOutlet UILabel *howToPlayLabel;
 @property (weak, nonatomic) IBOutlet UIView *cardsContainerView;
-@property (assign, nonatomic) int columns;
-@property (strong, nonatomic) CircularTimer *timer;
+@property (strong, nonatomic) IBOutlet UIView *timerContainerView;
 
+@property (strong, nonatomic) CircularTimer *timer;
+@property (assign, nonatomic) int columns;
+
+-(IBAction) playButtonClicked:(id)sender;
 
 @end
 

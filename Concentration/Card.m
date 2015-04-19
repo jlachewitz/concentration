@@ -12,7 +12,8 @@ static NSString* cardBackSideImageName = @"cardbacksideimage.png";
 
 @implementation Card
 
-- (id)initWithFrame:(CGRect)frame andName:(NSString*)name andCardFrontSideImageNamed:(NSString*)cardFrontSideImageName andDelegate:(id<CardDelegate>)delegate
+# pragma mark Init and copy methods
+- (id) initWithFrame:(CGRect)frame andName:(NSString*)name andCardFrontSideImageNamed:(NSString*)cardFrontSideImageName andDelegate:(id<CardDelegate>)delegate
 {
     self.name = name;
     self.cardFrontSideImageName = cardFrontSideImageName;
@@ -25,36 +26,38 @@ static NSString* cardBackSideImageName = @"cardbacksideimage.png";
         self.isVisible = NO;
         self.isMatched = NO;
         
-        UIImage *cardImage = [UIImage imageNamed:cardBackSideImageName];
-        self.cardButton = [[UIButton alloc] init];
-        // Do any additional setup after loading the view, typically from a nib.
         int cardSideLength = (frame.size.width/[self.delegate getNumColumns]);
         CGRect newFrame = CGRectMake(0, 0, cardSideLength-5, cardSideLength-5);
-
+        
+        UIImage *cardImage = [UIImage imageNamed:cardBackSideImageName];
+        self.cardButton = [[UIButton alloc] init];
         [self.cardButton setFrame:newFrame];
-
         [self.cardButton setImage:cardImage forState:UIControlStateNormal];
         [self.cardButton setAdjustsImageWhenHighlighted:NO];
         [self.cardButton addTarget:self action:@selector(toggleCardImageShowing:) forControlEvents:UIControlEventTouchUpInside];
+        
         [self addSubview:self.cardButton];
     }
     
     return self;
 }
 
-- (Card *) copyWithZone: (NSZone *)zone {
+- (Card*) copyWithZone:(NSZone*)zone
+{
     Card *card = [[Card alloc] initWithFrame:self.frame andName:self.name andCardFrontSideImageNamed:self.cardFrontSideImageName andDelegate:self.delegate];
     card.isMatched = NO;
     card.isVisible = NO;
     return card;
 }
 
+# pragma mark Show card face
 - (void) toggleCardImageShowing:(id)sender
 {
     if (!self.isVisible)
     {
         self.isVisible = YES;
         
+        // we need to tell our delegate that we toggled the card, so that we can add it to our current guess and check for a match
         [self.delegate toggledCard:self];
     }
     else
@@ -63,6 +66,7 @@ static NSString* cardBackSideImageName = @"cardbacksideimage.png";
     }
 }
 
+# pragma mark Toggle isVisible/isMatched
 - (void) setIsVisible:(BOOL)isVisible
 {
     _isVisible = isVisible;
